@@ -1,12 +1,11 @@
-import { Hero } from "@/components/landing/hero";
+"use client";
 
+import { AVLTreeVisualizer } from "@/components/visualizer/avl-tree/avl-tree-visualizer";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen p-4 sm:p-10">
-     
-      <Hero />
-      
-    </div>
+
+      <AVLTreeVisualizer />
+    
   );
 }
