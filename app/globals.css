@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+   --background: 233 27% 25%;                   /* rgb(32, 48, 70) */
+    --foreground: 220 33% 93%;                    /* light text */
+    
+    --card: 217 37% 20%;                          /* slightly lighter */
+    --card-foreground: 220 33% 93%;
+    
+    --popover: 218 37% 24%;
+    --popover-foreground: 220 33% 93%;
+
+    --primary: 207 50% 49%;                       /* soft blue */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 218 37% 16%;
+    --secondary-foreground: 220 33% 93%;
+
+    --muted: 218 30% 18%;
+    --muted-foreground: 220 20% 68%;
+
+    --accent: 207 50% 49%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 218 23% 29%;
+    --input: 218 23% 29%;
+    --ring: 207 90% 54%;
+
+    --chart-1: 207 70% 54%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  --chart-background: 0 0% 100%;
+    --color-1: 0 100% 63%;
+    --color-2: 270 100% 63%;
+    --color-3: 210 100% 63%;
+    --color-4: 195 100% 63%;
+    --color-5: 90 100% 63%;
+;
+  }
+
+  
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out forwards;
+}
+
+
